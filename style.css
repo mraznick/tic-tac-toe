@@ -15,14 +15,14 @@ body {
 
 .board {
   display: grid;
-  height: 100vh;
+  height: 50vh;
   width: 100vw;
   justify-content: center;
   align-content: center;
   justify-items: center;
   align-items: center;
   grid-template-columns: repeat(3, auto);
-  margin-bottom: -200px;
+  margin-top: 50px;
 }
 
 .cell {
@@ -34,17 +34,6 @@ body {
   align-items: center;
   position: relative;
   cursor: pointer;
-}
-
-
-
-#button-holder {
-  display: flex;
-  flex-direction: row;
-  height: 10vh;
-  width: 100vh;
-  margin-left: 750px;
-  margin-bottom: -500px;
 }
 
 #reset {
@@ -79,12 +68,23 @@ body {
 }
 
 #winningMessage {
+  width: 100vw;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-items: center;
   align-items: center;
   justify-content: center;
   align-content: center;
-  margin-bottom: 10px;
   font-size: 32pt;
+  margin-top: 30px;
 }
+
+#reset {
+  margin-top: 20px;
+}
+
+/* @media (min-width: 600px) {
+  #winningMessage {
+    transform: translateY(-95%);
+  }
+} */
